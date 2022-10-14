@@ -72,6 +72,28 @@ Then click on the Cog Wheel at the bottom of the navigation bar on the left-hand
 Configure Environment". Click on "Add Item" and set the PICO_SDK_PATH to be ..\..\pico-sdk
 
 Like this
+![a](https://github.com/akiyamask/guide-for-sdk-installation/blob/main/5.png)
+
+Then Additionally you will need to scroll down to "Cmake: Generator" and enter "NMake Makefiles" into the box.
+Like this
+![a](https://github.com/akiyamask/guide-for-sdk-installation/blob/main/6.png)
+
+Next select open folder on the left-up side of the vscode. Select your pico-example in Downloads folder.
+And click the build at the bottom of the vscode ( Remember to choose the GCC for arm-none-eabi)
+Consequently, you will enter a build process like this
+![a](https://github.com/akiyamask/guide-for-sdk-installation/blob/main/7.png)
+
+After this you can close your vscode to find the uf2 file in your users/   /pico/Downloads/pico-examples/bulid/......
+For instance, you find the build file named hello_usb.uf2 which is transfered from hello_usb.c.
+You can drag it in your RP2040's saving area and it will run automatically! Through your serial you can see it.
+Like this
+![a](https://github.com/akiyamask/guide-for-sdk-installation/blob/main/8.png)
+
+Anyway, we can use c file to edit the code, after which we build it into uf2 file and run it with RP2040.
+
+
+
+
 
 
 
