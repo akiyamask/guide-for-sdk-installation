@@ -34,6 +34,53 @@ C:\Users\pico\Downloads\pico-sdk> git submodule update --init
 C:\Users\pico\Downloads\pico-sdk> cd ..
 C:\Users\pico\Downloads> git clone -b master https://github.com/raspberrypi/pico-examples.git
 
-You will get this results if succeed.
+You will get these results if succeed.
+![a](https://github.com/akiyamask/guide-for-sdk-installation/blob/main/1.png)
+
+Then set the path with this NOTE the "..\.." is exactly this but not something else. Just copy and paste.
+C:\Users\pico\Downloads> setx PICO_SDK_PATH "..\..\pico-sdk"
+
+You will get these results if succeed.
+![a](https://github.com/akiyamask/guide-for-sdk-installation/blob/main/2.png)
+
+Then 
+C:\Users\pico\Downloads> cd pico-examples
+C:\Users\pico\Downloads\pico-examples> mkdir build
+C:\Users\pico\Downloads\pico-examples> cd build
+C:\Users\pico\Downloads\pico-examples\build> cmake -G "NMake Makefiles" ..
+
+
+You will get these results if succeed.
+![a](https://github.com/akiyamask/guide-for-sdk-installation/blob/main/3.png)
+
+Then
+C:\Users\pico\Downloads\pico-examples\build> nmake
+You will get these results if succeed. NOTE this is a long installation process.(0%-100%)
+![a](https://github.com/akiyamask/guide-for-sdk-installation/blob/main/4.png)
+
+Next you have to install the visual studio code.
+After installation open a Developer Command
+Prompt window from the Windows Menu, by selecting Windows > Visual Studio 2022 > Developer Command Prompt for VS2022
+from the menu. Then type (in the Developer Command Prompt for VS2022 but not the cmd)
+C:> code
+then the vscode will be launched.
+We’ll now need to install the CMake Tools extension. Click on the Extensions icon in the left-hand toolbar (or type Ctrl +
+Shift + X), and search for "CMake Tools" and click on the entry in the list, and then click on the install button.
+
+Then click on the Cog Wheel at the bottom of the navigation bar on the left-hand side of the interface and select
+"Settings". Then in the Settings pane click on "Extensions" and then "CMake Tools". Then scroll down to "Cmake:
+Configure Environment". Click on "Add Item" and set the PICO_SDK_PATH to be ..\..\pico-sdk
+
+Like this
+
+
+
+
+
+
+
+
+
+
 
 
